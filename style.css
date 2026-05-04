@@ -1,0 +1,174 @@
+:root {
+    --wood-bg: #faf0e1;
+    --wood-card: #fffaf3;
+    --wood-brown: #8b5a2b;
+    --wood-sand: #d4b896;
+    --wood-dark: #5c3a1e;
+    --wood-border: #e2cfb3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--wood-bg);
+    margin: 0;
+    padding: 20px;
+    background-image: radial-gradient(circle at 10% 20%, rgba(139,90,43,0.03) 2%, transparent 2.5%);
+    background-size: 30px 30px;
+}
+
+.wood-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: var(--wood-card);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 12px 28px rgba(92,58,30,0.08);
+    border: 1px solid var(--wood-border);
+}
+
+h1, h2, h3 {
+    color: var(--wood-brown);
+    margin-bottom: 20px;
+}
+h2 {
+    border-bottom: 3px solid var(--wood-sand);
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+a {
+    color: var(--wood-brown);
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    color: var(--wood-dark);
+    text-decoration: underline;
+}
+
+.nude-btn, button, .add-to-cart-btn {
+    display: inline-block;
+    background: var(--wood-brown);
+    color: #fff8f0;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.nude-btn:hover, button:hover, .add-to-cart-btn:hover {
+    background: var(--wood-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(139,90,43,0.2);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.timber-card {
+    background: var(--wood-card);
+    border: 1px solid var(--wood-border);
+    border-radius: 28px;
+    padding: 18px;
+    text-align: center;
+    transition: 0.2s;
+}
+.timber-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 24px rgba(92,58,30,0.1);
+    border-color: var(--wood-sand);
+}
+.timber-card img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+.timber-card h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--wood-brown);
+}
+.timber-card p {
+    color: var(--wood-dark);
+    font-weight: 500;
+}
+
+.wood-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.wood-table th, .wood-table td {
+    border: 1px solid var(--wood-border);
+    padding: 12px;
+}
+.wood-table th {
+    background-color: var(--wood-sand);
+    color: #4a2a12;
+}
+.wood-table tr:nth-child(even) {
+    background-color: #fdf7ef;
+}
+
+.error {
+    color: #b86b4a;
+    background: #fbeee7;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #b86b4a;
+}
+.success {
+    color: #6b8c5c;
+    background: #eff5ea;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #6b8c5c;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 1px solid var(--wood-border);
+    border-radius: 50px;
+    font-size: 14px;
+    background: white;
+}
+form button {
+    width: auto;
+    background: var(--wood-brown);
+}
+form button:hover {
+    background: var(--wood-dark);
+}
+
+.wood-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--wood-sand), #e0c8a8);
+    color: #4a2a12;
+    border-radius: 48px;
+    margin-bottom: 30px;
+}
+.wood-hero h1 {
+    font-size: 3rem;
+    color: #4a2a12;
+}
+
+@media (max-width: 768px) {
+    .products-grid { grid-template-columns: 1fr; }
+    .wood-wrapper { padding: 15px; }
+}

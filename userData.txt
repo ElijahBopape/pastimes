@@ -1,0 +1,5 @@
+John Doe|john@example.com|john123|5f4dcc3b5aa765d61d8327deb882cf99|buyer|1|none
+Jane Smith|jane@example.com|janes|5f4dcc3b5aa765d61d8327deb882cf99|seller|1|approved
+Admin User|admin@pastimes.com|admin|5f4dcc3b5aa765d61d8327deb882cf99|admin|1|none
+Mike Brown|mike@example.com|mikeb|5f4dcc3b5aa765d61d8327deb882cf99|buyer|0|none
+Sarah Lee|sarah@example.com|sarah123|5f4dcc3b5aa765d61d8327deb882cf99|seller|1|pending

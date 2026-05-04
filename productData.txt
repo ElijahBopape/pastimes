@@ -1,0 +1,6 @@
+name|description|price|image|seller_id|status|admin_approved
+Black Hoodie|Comfortable cotton hoodie|200|hoodie.jpg|2|available|1
+Leather Jacket|Genuine leather, size M|450|jacket.jpg|2|available|1
+Blue Jeans|Slim fit, size 32|150|jeans.jpg|5|available|1
+White T-Shirt|100% cotton|50|tshirt.jpg|2|available|1
+Cap|Adjustable, black|30|cap.jpg|5|available|1
